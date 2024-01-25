@@ -55,12 +55,16 @@ header ul li
     border-radius: 8px;
     cursor: pointer;
 }
-#section1
-{
+#section1 {
+    background: url('water_image1.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     margin-top: -1.8rem;
     height: fit-content;
+    padding-bottom: 4rem;
 }
+
 #section1 img
 {
     position: absolute;
@@ -69,10 +73,23 @@ header ul li
     height: 30rem;
     opacity: .4;
 }
+.des
+{
+    position: relative;
+    z-index: 2;
+    color: rgb(22, 21, 21);
+    width: 80%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #continer
 {
     height: fit-content;
     overflow: hidden;
+}
+.boldn
+{
+    color: blue;
 }
 #aya
 {
@@ -86,7 +103,7 @@ header ul li
 #title
 {
     color: rgb(0, 60, 255);
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: auto;
     margin-top: 4rem;
     width: fit-content;
@@ -96,7 +113,7 @@ header ul li
 {
     position: relative;
     z-index: 1;
-    margin-top: 5rem;
+    margin-top: -20rem;
 }
 #wave path
 {
@@ -129,7 +146,7 @@ header ul li
     border-radius: 8px;
     padding-right: 2rem;
 }
-.khdamat
+/* .khdamat
 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
@@ -137,18 +154,59 @@ header ul li
     text-align: right;
     position: relative;
     margin-left: 2rem;
+} */
+#khdamat
+{
+    width: 100%;
+    height: 50vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow:visible;
+
 }
-.khdamat::before
+.title_of_kh
+{
+    color: blue;
+}
+.cont_of_khadmat
+{
+    width: 20rem;
+    height: fit-content;
+    padding: .5rem 1rem;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+.cont_of_khadmat p
+{
+    width: fit-content;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.cont_of_khadmat::before
 {
     content: "";
     position: absolute;
-    right: -1.2rem;
-    top: 43%;
-    background-color:rgb(5, 173, 252);
+    margin: auto;
+    background-color:silver;
     width: 1rem;
     height: 1rem;
-    border-radius: 100%;
+    z-index: -1;
+    border-radius: 8px;
     animation: inc 1s infinite reverse ease-out;
+}
+@keyframes inc
+{
+    100%
+    {
+        opacity: 0;
+        scale: 1.2;
+    }
 }
 #second
 {
@@ -173,8 +231,8 @@ header ul li
 #windowe
 {
     margin-left: 40%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 20rem;
+    margin-bottom: 5rem;
     width:19rem;
     height: 25rem;
     overflow: hidden;
@@ -207,14 +265,6 @@ header ul li
     font-size: 3rem;
     margin-top: -15rem;
 }
-@keyframes inc
-{
-    100%
-    {
-        opacity: 0;
-        scale: 1.2;
-    }
-}
 @media screen and (max-width:750px) {
     #section1 img
     {
@@ -228,14 +278,14 @@ header ul li
     #windowe
     {
         margin-left: 15%;
-        margin-top: 1rem;
+        margin-top: 35rem;
         margin-bottom: 1rem;
         width:19rem;
         height: 25rem;
     }
     #wave
     {
-        margin-top: 4rem;
+        margin-top: -5rem;
     }
     .back_word
     {
@@ -268,7 +318,7 @@ header ul li
     }
     #wave
     {
-        margin-top: -1rem;
+        margin-top: -10rem;
     }
     .back_word
     {
