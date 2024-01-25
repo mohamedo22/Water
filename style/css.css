@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'ayat_f';
+    src: url('ayat_f.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Main_f';
+    src: url('Main_f.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Main_f';
+    box-sizing: border-box;
+    transition: all 800ms;
+    text-align: right;
+}
+
+header
+{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 20px #a1c4fd;
+    position: sticky;
+    top: 0;
+}
+.logo
+{
+    width: 6rem;
+}
+header ul
+{
+    display: flex;
+    list-style: none;
+    color: #2d4b80;
+    margin-left: -1.4rem;
+    font-size: 1.5rem;
+}
+header ul li a
+{
+    text-decoration: none;
+}
+header ul li
+{
+    margin-left: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#section1
+{
+    width: 100%;
+    margin-top: -1.8rem;
+    height: fit-content;
+}
+#section1 img
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 30rem;
+    opacity: .4;
+}
+#continer
+{
+    height: fit-content;
+    overflow: hidden;
+}
+#aya
+{
+    font-family: ayat_f;
+    font-size: 2rem;
+    width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    opacity: 1;
+}
+#title
+{
+    color: rgb(0, 60, 255);
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 4rem;
+    width: fit-content;
+    opacity: 1;
+}
+#wave
+{
+    position: relative;
+    z-index: 1;
+    margin-top: 5rem;
+}
+#wave path
+{
+    fill: white;
+}
+.back_word
+{
+    font-size: 6rem;
+    color: black;
+    opacity: .2;
+    position: relative;
+    z-index: -1;
+    left: -40vw;
+    top: 5rem;
+}
+.fore_word
+{
+    font-size: 3rem;
+    color: blue;
+    width: fit-content;
+    margin: auto;
+}
+.cons
+{
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: fit-content;
+    border-radius: 8px;
+    padding-right: 2rem;
+}
+.khdamat
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: right;
+    position: relative;
+    margin-left: 2rem;
+}
+.khdamat::before
+{
+    content: "";
+    position: absolute;
+    right: -1.2rem;
+    top: 43%;
+    background-color:rgb(5, 173, 252);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    animation: inc 1s infinite reverse ease-out;
+}
+#second
+{
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    width: 100%;
+}
+.sections{
+    margin-top: -3rem;
+}
+.images_from_user
+{
+    width:32rem;
+    height: 25rem;
+    margin-left: 2rem;
+}
+#contanir_of_images
+{
+    display: flex;
+}
+#windowe
+{
+    margin-left: 40%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width:19rem;
+    height: 25rem;
+    overflow: hidden;
+}
+.navigate-btn
+{
+    cursor: pointer;
+    border:none;
+    outline:none;
+    margin-left: 70%;
+    position: relative;
+    top: -4rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20%;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+}
+#sec_ttow
+{
+    border-bottom:2px solid rgba(0, 0, 255, 0.349);
+    border-radius: 10px;
+}
+.twas
+{
+    background-color: #0099ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: -15rem;
+}
+@keyframes inc
+{
+    100%
+    {
+        opacity: 0;
+        scale: 1.2;
+    }
+}
+@media screen and (max-width:750px) {
+    #section1 img
+    {
+        height: 20rem;
+    }
+    .twas
+    {
+        font-size: 1.5rem;
+        margin-top:-5rem;
+    }
+    #windowe
+    {
+        margin-left: 15%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width:19rem;
+        height: 25rem;
+    }
+    #wave
+    {
+        margin-top: 4rem;
+    }
+    .back_word
+    {
+        left: -1rem;
+        top: 7rem;
+    }
+    .fore_word
+    {
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .khdamat
+    {
+        margin-left: 0;
+    }
+    .khdamat::before
+    {
+        right: -1.2rem;
+        top: 48%;
+    }
+}
+@media (min-width:750px) and (max-width:1000px) {
+    #section1 img
+    {
+        height: 20rem;
+    }
+    .twas
+    {
+        margin-top: -10rem;
+    }
+    #wave
+    {
+        margin-top: -1rem;
+    }
+    .back_word
+    {
+        left: -20vw;
+    }
+    .fore_word
+    {
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .khdamat::before
+    {
+        right: -1.2rem;
+        top: 48%;
+    }
+}

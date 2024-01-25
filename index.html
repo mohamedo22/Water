@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعبئة العامر</title>
+    <link rel="stylesheet" href="style/css.css">
+    <link rel="icon" href="style/logo.png">
+</head>
+<body>
+    <div id="continer">
+        <header>
+            <img src="style/logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#sec2">خدماتنا</a></li>
+                <li> <a href="#sec_ttow">مناطق التغطية</a></li>
+                <li><a href="#msk_elkhtam">طرق التواصل</a></li>
+            </ul>
+        </header>
+        <div id="section1">
+            <img src="style/water_image1.jpg"  alt="">
+            <p id="aya">"وجعلنا من الماء كل شئ حي"</p>
+            <p id="title">تعبئة العامر للمياه العذبة</p>
+        </div>
+        <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path  fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,192C480,203,600,245,720,245.3C840,245,960,203,1080,186.7C1200,171,1320,181,1380,186.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <div class="sections" id="sec2">
+            <p class="back_word">خدماتنا</p>
+            <p class="fore_word">خدماتنا</p>
+            <div class="cons">
+                <p class="khdamat">توصيل مياه عذبة صالحة للشرب للبيوت</p>
+                <p class="khdamat">توصيل مياه عذبة صالحة للمطاعم</p>
+                <p class="khdamat">توصيل مياه عذبة صالحة للمصانع</p>
+                <p class="khdamat">توصيل مياه عذبة صالحة للاستراحات وتعبئة المسابح</p>
+            </div>
+        </div>
+        <div id="windowe">
+            <div id="contanir_of_images">
+                <img src="style/img1.jpg" alt="" class="images_from_user">
+                <img src="style/img2.jpg" alt="" class="images_from_user">
+                <img src="style/img3.jpg" alt="" class="images_from_user">
+            </div>
+            <button class="navigate-btn" onclick="navigate()">التالي</button>
+        </div>
+        <div class="sections" id="sec_ttow">
+            <p class="back_word" style="font-size: 4rem;">مناطق التغطية </p>
+            <p class="fore_word">مناطق التغطية </p>
+            <div class="cons" id="second">
+                <p class="khdamat mn">مناطق الدمام</p>
+                <p class="khdamat mn">مناطق الخبر</p>
+                <p class="khdamat mn">مناطق الظهران</p>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 5rem;" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,90.7C384,117,480,203,576,213.3C672,224,768,160,864,133.3C960,107,1056,117,1152,101.3C1248,85,1344,43,1392,21.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="sections twas" id="msk_elkhtam">
+            <p>تواصل معنا نحن في انتظارك 24 ساعه</p>
+            <p>رقم التواصل : 0532862821</p>
+        </div>
+    </div>
+    <script>
+        let i = 0;
+        function navigate(){
+            ++i;
+            if(i>2)
+            {
+                i = 0;
+            }
+            document.getElementById("contanir_of_images").style.marginLeft= `${-17*i}rem`;
+        }
+    </script>
+</body>
+</html>
