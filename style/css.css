@@ -82,6 +82,20 @@ header ul li
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#whatsappl
+{
+    position: absolute;
+    top: 7rem;
+    left: 10rem;
+}
+#whatsapp
+{
+    width: 4rem;
+}
+#whatsapp path
+{
+    fill: green;
+}
 #continer
 {
     height: fit-content;
