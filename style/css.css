@@ -86,7 +86,17 @@ header ul li
 {
     position: absolute;
     top: 7rem;
-    left: 10rem;
+    left: 5rem;
+}
+#phone_icon
+{
+    position: absolute;
+    top: 7rem;
+    left: 16rem;
+}
+#call
+{
+    width: 2rem;
 }
 #whatsapp
 {
